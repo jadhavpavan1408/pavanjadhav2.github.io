@@ -23,12 +23,13 @@
         font-family: sans-serif;
       }
       section {
-        border: 2px solid saddlebrown;
-        padding: 50px;
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
+        align-items: center;
         text-align: center;
+        height: 100vh;
+        width: 100%;
       }
       section .cardall {
         margin: 20px;
@@ -46,7 +47,7 @@
       .cardall:hover {
         background-color: 0px 3px 6px rgba(0, 0, 0, 0.16);
         transition: 0.4s;
-        transform: translate(0px, -8px);
+        transform: translate(0px, -18px);
       }
       .cardall button {
         margin-top: 10px;
@@ -60,60 +61,89 @@
         color: white;
         font-weight: bold;
       }
+      #biryanibtn{
+        background-color: #8DA242;
+      }
+      #burgerbtn{
+        background-color: #F1B814;
+      }
+      #pastrybtn {
+        background-color:#D48166;
+      }
+      #pizzabtn{
+        background-color: #3FD2C7;
+      }
+      #sandwichbtn {
+        background-color: #FB8122;
+      }
     </style>
   </head>
   <body>
     <section>
+        <!--1-->
       <div class="cardall">
-        <img src="../../public/Images/biryani1.jpg" alt="" />
+        <img src="./images/biryani.jpg" alt="" />
         <h3>Biryani</h3>
-        <p>Price : $20.00</p>
+        <p>Price : 120.00 &#8377</p>
         <div class="star">
-          <span class="bi bi-star text-danger"></span>
-          <span class="bi bi-star text-danger"></span>
-          <span class="bi bi-star text-danger"></span>
-          <span class="bi bi-star-fill text-danger"></span>
+          <span class="bi bi-star-fill text-warning"></span>
+          <span class="bi bi-star-fill text-warning"></span>
+          <span class="bi bi-star-fill text-warning"></span>
+          <span class="bi bi-star text-warning"></span>
         </div>
-        <button>Buy Now</button>
+        <button id="biryanibtn">Buy Now</button>
       </div>
       <!--2-->
       <div class="cardall">
-        <img src="../../public/Images/sandwich1.jpg" alt="" />
-        <h3>sandwitch</h3>
-        <p>Price : $30.00</p>
+        <img src="./images/burger.jpg" alt="" />
+        <h3>Burger</h3>
+        <p>Price : 60.00 &#8377</p>
         <div class="star">
-          <span class="bi bi-star text-danger"></span>
-          <span class="bi bi-star text-danger"></span>
-          <span class="bi bi-star text-danger"></span>
-          <span class="bi bi-star-fill text-danger"></span>
+          <span class="bi bi-star-fill text-warning"></span>
+          <span class="bi bi-star-fill text-warning"></span>
+          <span class="bi bi-star-fill text-warning"></span>
+          <span class="bi bi-star text-warning"></span>
         </div>
-        <button>Buy Now</button>
+        <button id="burgerbtn">Buy Now</button>
       </div>
       <!--3-->
       <div class="cardall">
-        <img src="../../public/Images/pizza1.jpg" alt="" />
-        <h3>Pizza</h3>
-        <p>Price : $50.00</p>
+        <img src="./images/cake.jpg" alt="" />
+        <h3>Pastry</h3>
+        <p>Price : 42.00 &#8377</p>
         <div class="star">
-          <span class="bi bi-star text-danger"></span>
-          <span class="bi bi-star text-danger"></span>
-          <span class="bi bi-star text-danger"></span>
-          <span class="bi bi-star-fill text-danger"></span>
+          <span class="bi bi-star-fill text-warning"></span>
+          <span class="bi bi-star-fill text-warning"></span>
+          <span class="bi bi-star-fill text-warning"></span>
+          <span class="bi bi-star-fill text-warning"></span>
         </div>
-        <button>Buy Now</button>
+        <button id="pastrybtn">Buy Now</button>
       </div>
       <!--4-->
       <div class="cardall">
-        <img src="../../public/Images/cake1.jpg" alt="" />
-        <h3>Cake</h3>
-        <p>Price : $120.00</p>
+        <img src="./images/pizza.jpg" alt="" />
+        <h3>Pizza</h3>
+        <p>Price : 180.00 &#8377</p>
         <div class="star">
-          <span class="bi bi-star text-danger"></span>
-          <span class="bi bi-star text-danger"></span>
-          <span class="bi bi-star text-danger"></span>
-          <span class="bi bi-star-fill text-danger"></span>
+          <span class="bi bi-star-fill text-warning"></span>
+          <span class="bi bi-star-fill text-warning"></span>
+          <span class="bi bi-star text-warning"></span>
+          <span class="bi bi-star text-warning"></span>
         </div>
-        <button>Buy Now</button>
+        <button id="pizzabtn">Buy Now</button>
+      </div>
+      <!--5-->
+      <div class="cardall">
+        <img src="./images/sandwich.jpg" alt="" />
+        <h3>Sandwitch</h3>
+        <p>Price : 80.00 &#8377</p>
+        <div class="star">
+          <span class="bi bi-star-fill text-warning"></span>
+          <span class="bi bi-star-fill text-warning"></span>
+          <span class="bi bi-star-fill text-warning"></span>
+          <span class="bi bi-star text-warning"></span>
+        </div>
+        <button id="sandwichbtn">Buy Now</button>
       </div>
     </section>
     <script
